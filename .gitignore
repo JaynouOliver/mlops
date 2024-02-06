@@ -1,0 +1,8 @@
+artifacts/data_ingestion
+src/cnnClassifier/__pycache__
+src/cnnClassifier/utils/__pycache__
+src/cnnClassifier/pipeline/__pycache__
+src/cnnClassifier/entity/__pycache__
+src/cnnClassifier/constants/__pycache__
+src/cnnClassifier/config/__pycache__
+src/cnnClassifier/components/__pycache__
