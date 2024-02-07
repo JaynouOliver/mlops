@@ -1,4 +1,10 @@
-artifacts/data_ingestion
+# pytype static type analyzer 
+.pytype
+
+# cython debug symbols
+cython_debug/
+
+artifacts/*
 src/cnnClassifier/__pycache__
 src/cnnClassifier/utils/__pycache__
 src/cnnClassifier/pipeline/__pycache__

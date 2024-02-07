@@ -9,3 +9,17 @@
 [2024-02-07 04:22:40,396: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2024-02-08 01:18:50,852: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-08 01:18:50,858: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-08 01:18:50,860: INFO: common: created directory at: artifacts]
+[2024-02-08 01:18:50,860: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-02-08 01:18:50,865: INFO: 2615585332: Downloading data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-02-08 01:18:55,701: INFO: 2615585332: Downloaded data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-02-08 02:40:36,478: WARNING: module_wrapper: From c:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-02-08 02:40:37,100: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-02-08 02:40:37,102: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-02-08 03:42:06,107: WARNING: module_wrapper: From c:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-02-08 03:42:06,505: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-02-08 03:42:06,505: INFO: utils: NumExpr defaulting to 8 threads.]
