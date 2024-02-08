@@ -23,3 +23,241 @@ x==========x]
 ]
 [2024-02-08 03:42:06,505: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
 [2024-02-08 03:42:06,505: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-02-08 21:02:49,728: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-02-08 21:02:50,149: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-02-08 21:02:50,149: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-02-08 21:03:58,168: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-02-08 21:03:58,388: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-02-08 21:03:58,388: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-02-08 21:03:59,081: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-02-08 21:03:59,081: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-08 21:03:59,081: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-08 21:03:59,081: INFO: common: created directory at: artifacts]
+[2024-02-08 21:03:59,081: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-02-08 21:03:59,081: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-02-08 21:04:03,606: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-02-08 21:04:03,749: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-02-08 21:04:03,749: INFO: main: *******************]
+[2024-02-08 21:04:03,749: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-02-08 21:04:03,749: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-08 21:04:03,749: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-08 21:04:03,749: INFO: common: created directory at: artifacts]
+[2024-02-08 21:04:03,765: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-02-08 21:04:03,765: ERROR: main: "'ConfigBox' object has no attribute 'updated_base_model_path'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 592, in box.box.Box.__getitem__
+KeyError: 'updated_base_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 631, in box.box.Box.__getattr__
+  File "box\\box.py", line 619, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'updated_base_model_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'updated_base_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 647, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'updated_base_model_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 592, in box.box.Box.__getitem__
+KeyError: 'updated_base_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 631, in box.box.Box.__getattr__
+  File "box\\box.py", line 619, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'updated_base_model_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'updated_base_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Subhr\Documents\github\ML\mlops\main.py", line 21, in <module>
+    prepare_base_model.main()
+  File "C:\Users\Subhr\Documents\github\ML\mlops\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 15, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\Documents\github\ML\mlops\src\cnnClassifier\config\configuration.py", line 42, in get_prepare_base_model_config
+    updated_base_model_path=Path(config.updated_base_model_path),
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 647, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'updated_base_model_path'"
+[2024-02-08 22:51:31,620: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-02-08 22:51:32,054: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-02-08 22:51:32,054: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-02-08 22:51:33,228: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-02-08 22:51:33,244: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-08 22:51:33,244: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-08 22:51:33,244: INFO: common: created directory at: artifacts]
+[2024-02-08 22:51:33,244: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-02-08 22:51:33,244: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-02-08 22:51:37,885: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-02-08 22:51:38,122: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-02-08 22:51:38,122: INFO: main: *******************]
+[2024-02-08 22:51:38,122: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-02-08 22:51:38,122: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-08 22:51:38,138: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-08 22:51:38,138: INFO: common: created directory at: artifacts]
+[2024-02-08 22:51:38,143: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-02-08 22:51:38,143: ERROR: main: "'ConfigBox' object has no attribute 'updated_base_model_path'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 592, in box.box.Box.__getitem__
+KeyError: 'updated_base_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 631, in box.box.Box.__getattr__
+  File "box\\box.py", line 619, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'updated_base_model_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'updated_base_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 647, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'updated_base_model_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 592, in box.box.Box.__getitem__
+KeyError: 'updated_base_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 631, in box.box.Box.__getattr__
+  File "box\\box.py", line 619, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'updated_base_model_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'updated_base_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Subhr\Documents\github\ML\mlops\main.py", line 21, in <module>
+    prepare_base_model.main()
+  File "C:\Users\Subhr\Documents\github\ML\mlops\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 15, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\Documents\github\ML\mlops\src\cnnClassifier\config\configuration.py", line 42, in get_prepare_base_model_config
+    updated_base_model_path=Path(config.updated_base_model_path),
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 647, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'updated_base_model_path'"
+[2024-02-09 01:31:22,981: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-02-09 01:31:23,430: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-02-09 01:31:23,430: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-02-09 01:31:24,489: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-02-09 01:31:24,489: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-09 01:31:24,489: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-09 01:31:24,489: INFO: common: created directory at: artifacts]
+[2024-02-09 01:31:24,489: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-02-09 01:31:24,489: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-02-09 01:31:28,875: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-02-09 01:31:29,012: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-02-09 01:31:29,012: INFO: main: *******************]
+[2024-02-09 01:31:29,012: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-02-09 01:31:29,012: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-09 01:31:29,012: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-09 01:31:29,012: INFO: common: created directory at: artifacts]
+[2024-02-09 01:31:29,012: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-02-09 01:31:29,012: ERROR: main: "'ConfigBox' object has no attribute 'updated_base_model_path'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 592, in box.box.Box.__getitem__
+KeyError: 'updated_base_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 631, in box.box.Box.__getattr__
+  File "box\\box.py", line 619, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'updated_base_model_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'updated_base_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 647, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'updated_base_model_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 592, in box.box.Box.__getitem__
+KeyError: 'updated_base_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 631, in box.box.Box.__getattr__
+  File "box\\box.py", line 619, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'updated_base_model_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'updated_base_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Subhr\Documents\github\ML\mlops\main.py", line 21, in <module>
+    prepare_base_model.main()
+  File "C:\Users\Subhr\Documents\github\ML\mlops\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 15, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\Documents\github\ML\mlops\src\cnnClassifier\config\configuration.py", line 42, in get_prepare_base_model_config
+    updated_base_model_path=Path(config.updated_base_model_path),
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 647, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'updated_base_model_path'"
