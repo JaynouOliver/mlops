@@ -1,178 +1,110 @@
-[2024-02-09 03:58:08,430: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+[2024-02-25 14:59:45,574: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
 ]
-[2024-02-09 03:58:08,669: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
-[2024-02-09 03:58:08,669: INFO: utils: NumExpr defaulting to 8 threads.]
-[2024-02-09 03:58:09,320: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
-[2024-02-09 03:58:09,320: INFO: common: yaml file: config\config.yaml loaded successfully]
-[2024-02-09 03:58:09,335: INFO: common: yaml file: params.yaml loaded successfully]
-[2024-02-09 03:58:09,335: INFO: common: created directory at: artifacts]
-[2024-02-09 03:58:09,335: INFO: common: created directory at: artifacts/data_ingestion]
-[2024-02-09 03:58:09,335: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
-[2024-02-09 03:58:14,016: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
-[2024-02-09 03:58:14,149: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+[2024-02-25 14:59:45,933: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-02-25 14:59:45,943: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-02-25 14:59:49,277: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-02-25 14:59:49,281: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-25 14:59:49,287: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-25 14:59:49,287: INFO: common: created directory at: artifacts]
+[2024-02-25 14:59:49,287: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-02-25 14:59:49,287: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-02-25 14:59:53,841: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-02-25 14:59:54,104: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
-[2024-02-09 03:58:14,149: INFO: main: *******************]
-[2024-02-09 03:58:14,149: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
-[2024-02-09 03:58:14,149: INFO: common: yaml file: config\config.yaml loaded successfully]
-[2024-02-09 03:58:14,149: INFO: common: yaml file: params.yaml loaded successfully]
-[2024-02-09 03:58:14,149: INFO: common: created directory at: artifacts]
-[2024-02-09 03:58:14,149: INFO: common: created directory at: artifacts/prepare_base_model]
-[2024-02-09 03:58:14,314: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+[2024-02-25 14:59:54,111: INFO: main: *******************]
+[2024-02-25 14:59:54,111: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-02-25 14:59:54,111: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-25 14:59:54,111: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-25 14:59:54,122: INFO: common: created directory at: artifacts]
+[2024-02-25 14:59:54,122: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-02-25 14:59:54,551: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
 ]
-[2024-02-09 03:58:14,449: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+[2024-02-25 14:59:54,685: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
 ]
-[2024-02-09 03:58:25,462: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
-[2024-02-09 03:58:25,698: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+[2024-02-25 14:59:55,337: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-02-25 14:59:55,687: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
 
 x==========x]
-[2024-02-09 04:04:03,944: WARNING: module_wrapper: From c:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+[2024-02-25 14:59:55,687: INFO: main: *******************]
+[2024-02-25 14:59:55,687: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-02-25 14:59:55,694: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-25 14:59:55,694: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-25 14:59:55,694: INFO: common: created directory at: artifacts]
+[2024-02-25 14:59:55,694: INFO: common: created directory at: artifacts\training]
+[2024-02-25 14:59:57,368: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
 ]
-[2024-02-09 04:04:04,240: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
-[2024-02-09 04:04:04,241: INFO: utils: NumExpr defaulting to 8 threads.]
-[2024-02-09 04:09:41,949: INFO: common: yaml file: config\config.yaml loaded successfully]
-[2024-02-09 04:09:41,954: INFO: common: yaml file: params.yaml loaded successfully]
-[2024-02-09 04:09:41,955: INFO: common: created directory at: artifacts]
-[2024-02-09 04:25:50,608: INFO: common: yaml file: config\config.yaml loaded successfully]
-[2024-02-09 04:25:50,608: INFO: common: yaml file: params.yaml loaded successfully]
-[2024-02-09 04:25:50,618: INFO: common: created directory at: artifacts]
-[2024-02-09 04:25:50,619: INFO: common: created directory at: artifacts\training]
-[2024-02-09 04:25:50,823: WARNING: module_wrapper: From c:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
-]
-[2024-02-09 04:25:50,940: WARNING: module_wrapper: From c:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
-]
-[2024-02-09 04:26:42,463: INFO: common: yaml file: config\config.yaml loaded successfully]
-[2024-02-09 04:26:42,478: INFO: common: yaml file: params.yaml loaded successfully]
-[2024-02-09 04:26:42,480: INFO: common: created directory at: artifacts]
-[2024-02-09 04:26:42,482: INFO: common: created directory at: artifacts\training]
-[2024-02-09 04:26:44,312: WARNING: module_wrapper: From c:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
-]
-[2024-02-09 04:37:26,778: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
-]
-[2024-02-09 04:37:27,000: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
-[2024-02-09 04:37:27,000: INFO: utils: NumExpr defaulting to 8 threads.]
-[2024-02-09 04:37:27,767: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
-[2024-02-09 04:37:27,767: INFO: common: yaml file: config\config.yaml loaded successfully]
-[2024-02-09 04:37:27,783: INFO: common: yaml file: params.yaml loaded successfully]
-[2024-02-09 04:37:27,783: INFO: common: created directory at: artifacts]
-[2024-02-09 04:37:27,783: INFO: common: created directory at: artifacts/data_ingestion]
-[2024-02-09 04:37:27,783: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
-[2024-02-09 04:37:32,421: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
-[2024-02-09 04:37:32,577: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+[2024-02-25 15:00:05,041: INFO: main: >>>>>> stage Training completed <<<<<<
 
 x==========x]
-[2024-02-09 04:37:32,577: INFO: main: *******************]
-[2024-02-09 04:37:32,577: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
-[2024-02-09 04:37:32,577: INFO: common: yaml file: config\config.yaml loaded successfully]
-[2024-02-09 04:37:32,577: INFO: common: yaml file: params.yaml loaded successfully]
-[2024-02-09 04:37:32,577: INFO: common: created directory at: artifacts]
-[2024-02-09 04:37:32,577: INFO: common: created directory at: artifacts/prepare_base_model]
-[2024-02-09 04:37:32,741: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
-]
-[2024-02-09 04:37:32,836: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
-]
-[2024-02-09 04:37:33,449: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
-[2024-02-09 04:37:33,944: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+[2024-02-25 15:00:05,041: INFO: main: *******************]
+[2024-02-25 15:00:05,041: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-02-25 15:00:05,041: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-25 15:00:05,041: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-25 15:00:05,041: INFO: common: created directory at: artifacts]
+[2024-02-25 15:00:07,664: INFO: common: json file saved at: scores.json]
+[2024-02-25 15:00:07,674: INFO: common: json file saved at: scores.json]
+[2024-02-25 15:00:07,674: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
-[2024-02-09 04:37:33,944: INFO: main: *******************]
-[2024-02-09 04:37:33,944: INFO: main: >>>>>> stage Training started <<<<<<]
-[2024-02-09 04:37:33,960: ERROR: main: name 'ModelTrainingPipeline' is not defined]
-Traceback (most recent call last):
-  File "C:\Users\Subhr\Documents\github\ML\mlops\main.py", line 31, in <module>
-    model_trainer = ModelTrainingPipeline()
-                    ^^^^^^^^^^^^^^^^^^^^^
-NameError: name 'ModelTrainingPipeline' is not defined
-[2024-02-09 04:39:53,284: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+[2024-02-25 19:39:50,743: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
 ]
-[2024-02-09 04:39:53,487: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
-[2024-02-09 04:39:53,487: INFO: utils: NumExpr defaulting to 8 threads.]
-[2024-02-09 04:45:37,607: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
-]
-[2024-02-09 04:45:37,827: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
-[2024-02-09 04:45:37,827: INFO: utils: NumExpr defaulting to 8 threads.]
-[2024-02-09 04:45:38,514: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
-[2024-02-09 04:45:38,514: INFO: common: yaml file: config\config.yaml loaded successfully]
-[2024-02-09 04:45:38,514: INFO: common: yaml file: params.yaml loaded successfully]
-[2024-02-09 04:45:38,514: INFO: common: created directory at: artifacts]
-[2024-02-09 04:45:38,514: INFO: common: created directory at: artifacts/data_ingestion]
-[2024-02-09 04:45:38,514: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
-[2024-02-09 04:45:45,116: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
-[2024-02-09 04:45:45,265: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+[2024-02-25 19:39:50,963: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-02-25 19:39:50,963: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-02-25 19:39:53,242: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-02-25 19:39:53,256: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-25 19:39:53,264: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-25 19:39:53,264: INFO: common: created directory at: artifacts]
+[2024-02-25 19:39:53,264: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-02-25 19:39:53,264: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-02-25 19:39:56,506: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-02-25 19:39:56,645: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
-[2024-02-09 04:45:45,265: INFO: main: *******************]
-[2024-02-09 04:45:45,265: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
-[2024-02-09 04:45:45,268: INFO: common: yaml file: config\config.yaml loaded successfully]
-[2024-02-09 04:45:45,270: INFO: common: yaml file: params.yaml loaded successfully]
-[2024-02-09 04:45:45,271: INFO: common: created directory at: artifacts]
-[2024-02-09 04:45:45,271: INFO: common: created directory at: artifacts/prepare_base_model]
-[2024-02-09 04:45:45,436: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+[2024-02-25 19:39:56,645: INFO: main: *******************]
+[2024-02-25 19:39:56,651: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-02-25 19:39:56,651: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-25 19:39:56,651: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-25 19:39:56,651: INFO: common: created directory at: artifacts]
+[2024-02-25 19:39:56,651: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-02-25 19:39:56,866: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
 ]
-[2024-02-09 04:45:45,520: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+[2024-02-25 19:39:57,018: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
 ]
-[2024-02-09 04:45:46,000: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
-[2024-02-09 04:45:46,224: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+[2024-02-25 19:39:57,541: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-02-25 19:39:57,777: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
 
 x==========x]
-[2024-02-09 04:45:46,224: INFO: main: *******************]
-[2024-02-09 04:45:46,224: INFO: main: >>>>>> stage Training started <<<<<<]
-[2024-02-09 04:45:46,224: INFO: common: yaml file: config\config.yaml loaded successfully]
-[2024-02-09 04:45:46,224: INFO: common: yaml file: params.yaml loaded successfully]
-[2024-02-09 04:45:46,224: INFO: common: created directory at: artifacts]
-[2024-02-09 04:45:46,232: INFO: common: created directory at: artifacts\training]
-[2024-02-09 04:45:46,596: ERROR: main: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\kidney-ct-scan-image']
-Traceback (most recent call last):
-  File "C:\Users\Subhr\Documents\github\ML\mlops\main.py", line 33, in <module>
-    model_trainer.main()
-  File "C:\Users\Subhr\Documents\github\ML\mlops\src\cnnClassifier\pipeline\stage_03_model_training.py", line 20, in main
-    training.train_valid_generator()
-  File "C:\Users\Subhr\Documents\github\ML\mlops\src\cnnClassifier\components\model_training.py", line 37, in train_valid_generator
-    self.valid_generator = valid_datagenerator.flow_from_directory(
-                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\preprocessing\image.py", line 1649, in flow_from_directory
-    return DirectoryIterator(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\preprocessing\image.py", line 563, in __init__
-    for subdir in sorted(os.listdir(directory)):
-                         ^^^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\kidney-ct-scan-image'
-[2024-02-09 04:47:41,632: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+[2024-02-25 19:39:57,777: INFO: main: *******************]
+[2024-02-25 19:39:57,777: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-02-25 19:39:57,777: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-25 19:39:57,777: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-25 19:39:57,777: INFO: common: created directory at: artifacts]
+[2024-02-25 19:39:57,786: INFO: common: created directory at: artifacts\training]
+[2024-02-25 19:39:58,879: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
 ]
-[2024-02-09 04:47:41,833: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
-[2024-02-09 04:47:41,833: INFO: utils: NumExpr defaulting to 8 threads.]
-[2024-02-09 04:47:42,442: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
-[2024-02-09 04:47:42,442: INFO: common: yaml file: config\config.yaml loaded successfully]
-[2024-02-09 04:47:42,442: INFO: common: yaml file: params.yaml loaded successfully]
-[2024-02-09 04:47:42,442: INFO: common: created directory at: artifacts]
-[2024-02-09 04:47:42,442: INFO: common: created directory at: artifacts/data_ingestion]
-[2024-02-09 04:47:42,442: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
-[2024-02-09 04:47:47,445: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
-[2024-02-09 04:47:47,590: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+[2024-02-25 19:40:13,375: INFO: main: >>>>>> stage Training completed <<<<<<
 
 x==========x]
-[2024-02-09 04:47:47,590: INFO: main: *******************]
-[2024-02-09 04:47:47,590: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
-[2024-02-09 04:47:47,590: INFO: common: yaml file: config\config.yaml loaded successfully]
-[2024-02-09 04:47:47,590: INFO: common: yaml file: params.yaml loaded successfully]
-[2024-02-09 04:47:47,590: INFO: common: created directory at: artifacts]
-[2024-02-09 04:47:47,590: INFO: common: created directory at: artifacts/prepare_base_model]
-[2024-02-09 04:47:47,745: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
-]
-[2024-02-09 04:47:47,827: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
-]
-[2024-02-09 04:47:48,246: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
-[2024-02-09 04:47:48,467: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+[2024-02-25 19:40:13,375: INFO: main: *******************]
+[2024-02-25 19:40:13,375: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-02-25 19:40:13,381: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-25 19:40:13,381: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-25 19:40:13,381: INFO: common: created directory at: artifacts]
+[2024-02-25 19:40:18,447: INFO: common: json file saved at: scores.json]
+[2024-02-25 19:40:18,449: INFO: common: json file saved at: scores.json]
+[2024-02-25 19:40:18,449: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
-[2024-02-09 04:47:48,467: INFO: main: *******************]
-[2024-02-09 04:47:48,467: INFO: main: >>>>>> stage Training started <<<<<<]
-[2024-02-09 04:47:48,467: INFO: common: yaml file: config\config.yaml loaded successfully]
-[2024-02-09 04:47:48,467: INFO: common: yaml file: params.yaml loaded successfully]
-[2024-02-09 04:47:48,467: INFO: common: created directory at: artifacts]
-[2024-02-09 04:47:48,474: INFO: common: created directory at: artifacts\training]
-[2024-02-09 04:47:49,449: WARNING: module_wrapper: From C:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+[2024-02-25 19:44:56,526: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-25 19:44:56,529: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-25 19:44:56,531: INFO: common: created directory at: artifacts]
+[2024-02-25 19:44:57,829: WARNING: module_wrapper: From c:\Users\Subhr\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
 ]
-[2024-02-09 04:48:02,957: INFO: main: >>>>>> stage Training completed <<<<<<
-
-x==========x]
+[2024-02-25 19:45:03,907: INFO: common: json file saved at: scores.json]
+[2024-02-25 19:45:10,202: INFO: builder_impl: Assets written to: C:\Users\Subhr\AppData\Local\Temp\tmpmf3g8kx0\model\data\model\assets]
+[2024-02-25 19:51:39,557: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-25 19:51:39,557: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-25 19:51:39,557: INFO: common: created directory at: artifacts]
+[2024-02-25 19:51:46,255: INFO: common: json file saved at: scores.json]
+[2024-02-25 19:51:50,794: INFO: builder_impl: Assets written to: C:\Users\Subhr\AppData\Local\Temp\tmpitr_sfbx\model\data\model\assets]
