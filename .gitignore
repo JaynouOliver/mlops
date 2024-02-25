@@ -4,7 +4,7 @@
 # cython debug symbols
 cython_debug/
 
-artifacts/*
+artifacts
 src/cnnClassifier/__pycache__
 src/cnnClassifier/utils/__pycache__
 src/cnnClassifier/pipeline/__pycache__
@@ -13,3 +13,7 @@ src/cnnClassifier/constants/__pycache__
 src/cnnClassifier/config/__pycache__
 src/cnnClassifier/components/__pycache__
 logs/*
+mlruns
+scores.json
+.dvc
+src/cnnClassifier.egg-info/SOURCES.txt
