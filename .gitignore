@@ -17,3 +17,4 @@ mlruns
 scores.json
 .dvc
 src/cnnClassifier.egg-info/SOURCES.txt
+src/cnnClassifier/__pycache__/__init__.cpython-311.pyc

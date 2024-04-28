@@ -315,3 +315,253 @@ x==========x]
  * Running on http://192.168.0.127:8080]
 [2024-02-26 03:06:13,695: INFO: _internal: [33mPress CTRL+C to quit[0m]
 [2024-02-26 03:06:22,003: INFO: _internal: 127.0.0.1 - - [26/Feb/2024 03:06:22] "GET / HTTP/1.1" 200 -]
+[2024-04-27 07:18:44,942: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-04-27 07:18:44,950: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-27 07:18:44,950: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-27 07:18:44,950: INFO: common: created directory at: artifacts]
+[2024-04-27 07:18:44,950: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-04-27 07:18:44,957: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-04-27 07:18:49,656: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-04-27 07:18:49,928: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-04-27 07:18:49,928: INFO: main: *******************]
+[2024-04-27 07:18:49,928: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-04-27 07:18:49,935: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-27 07:18:49,940: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-27 07:18:49,940: INFO: common: created directory at: artifacts]
+[2024-04-27 07:18:49,943: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-04-27 07:18:57,345: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-04-27 07:18:57,817: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-04-27 07:18:57,817: INFO: main: *******************]
+[2024-04-27 07:18:57,824: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-04-27 07:18:57,824: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-27 07:18:57,831: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-27 07:18:57,831: INFO: common: created directory at: artifacts]
+[2024-04-27 07:18:57,831: INFO: common: created directory at: artifacts\training]
+[2024-04-27 07:19:20,478: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-04-27 07:19:20,478: INFO: main: *******************]
+[2024-04-27 07:19:20,478: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-04-27 07:19:20,478: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-27 07:19:20,478: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-27 07:19:20,478: INFO: common: created directory at: artifacts]
+[2024-04-27 07:19:23,182: INFO: common: json file saved at: scores.json]
+[2024-04-27 07:19:23,198: INFO: common: json file saved at: scores.json]
+[2024-04-27 07:19:27,745: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-04-27 07:19:28,983: INFO: builder_impl: Assets written to: C:\Users\Subhr\AppData\Local\Temp\tmpo3400out\model\data\model\assets]
+[2024-04-27 07:20:47,296: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-04-27 07:25:17,248: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.167.230:8080]
+[2024-04-27 07:25:17,248: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-04-27 07:25:33,345: INFO: _internal: 127.0.0.1 - - [27/Apr/2024 07:25:33] "GET / HTTP/1.1" 200 -]
+[2024-04-27 07:29:02,350: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.167.230:8080]
+[2024-04-27 07:29:02,350: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-04-27 07:29:07,906: INFO: _internal: 127.0.0.1 - - [27/Apr/2024 07:29:07] "GET / HTTP/1.1" 200 -]
+[2024-04-27 07:32:03,636: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\Documents\github\mlops\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\Documents\github\mlops\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\keras\losses.py", line 299, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+TypeError: CategoricalCrossentropy.__init__() got an unexpected keyword argument 'fn'
+[2024-04-27 07:32:03,642: INFO: _internal: 127.0.0.1 - - [27/Apr/2024 07:32:03] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-04-27 07:33:21,590: INFO: _internal: 127.0.0.1 - - [27/Apr/2024 07:33:21] "GET / HTTP/1.1" 200 -]
+[2024-04-27 07:33:24,152: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\Documents\github\mlops\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\Documents\github\mlops\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\keras\losses.py", line 299, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+TypeError: CategoricalCrossentropy.__init__() got an unexpected keyword argument 'fn'
+[2024-04-27 07:33:24,152: INFO: _internal: 127.0.0.1 - - [27/Apr/2024 07:33:24] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-04-27 07:33:26,955: INFO: _internal: 127.0.0.1 - - [27/Apr/2024 07:33:26] "GET / HTTP/1.1" 200 -]
+[2024-04-27 07:37:13,724: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\Documents\github\mlops\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\Documents\github\mlops\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Subhr\anaconda3\envs\mlflow\Lib\site-packages\keras\losses.py", line 299, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+TypeError: CategoricalCrossentropy.__init__() got an unexpected keyword argument 'fn'
+[2024-04-27 07:37:13,740: INFO: _internal: 127.0.0.1 - - [27/Apr/2024 07:37:13] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-04-27 07:37:37,107: INFO: _internal: 127.0.0.1 - - [27/Apr/2024 07:37:37] "GET / HTTP/1.1" 200 -]
+[2024-04-27 08:12:20,822: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-04-27 08:12:20,822: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-27 08:12:20,828: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-27 08:12:20,828: INFO: common: created directory at: artifacts]
+[2024-04-27 08:12:20,828: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-04-27 08:12:20,831: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-04-27 08:12:25,745: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-04-27 08:12:26,002: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-04-27 08:12:26,002: INFO: main: *******************]
+[2024-04-27 08:12:26,002: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-04-27 08:12:26,002: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-27 08:12:26,018: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-27 08:12:26,018: INFO: common: created directory at: artifacts]
+[2024-04-27 08:12:26,018: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-04-27 08:12:26,833: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-04-27 08:12:27,272: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-04-27 08:12:27,272: INFO: main: *******************]
+[2024-04-27 08:12:27,272: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-04-27 08:12:27,278: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-27 08:12:27,278: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-27 08:12:27,278: INFO: common: created directory at: artifacts]
+[2024-04-27 08:12:27,284: INFO: common: created directory at: artifacts\training]
+[2024-04-27 08:12:49,652: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-04-27 08:12:49,652: INFO: main: *******************]
+[2024-04-27 08:12:49,652: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-04-27 08:12:49,652: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-27 08:12:49,652: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-27 08:12:49,652: INFO: common: created directory at: artifacts]
+[2024-04-27 08:12:52,221: INFO: common: json file saved at: scores.json]
+[2024-04-27 08:12:52,221: INFO: common: json file saved at: scores.json]
+[2024-04-27 08:12:53,659: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-04-27 08:12:54,412: INFO: builder_impl: Assets written to: C:\Users\Subhr\AppData\Local\Temp\tmpbw01r04u\model\data\model\assets]
+[2024-04-27 08:13:07,993: INFO: dir_util: creating C:\Users\Subhr\Documents\github\mlops\mlruns\0\889b1a6499344c1f88d55f83f26894c3\artifacts\model\data]
+[2024-04-27 08:13:07,993: INFO: dir_util: creating C:\Users\Subhr\Documents\github\mlops\mlruns\0\889b1a6499344c1f88d55f83f26894c3\artifacts\model\data\model]
+[2024-04-27 08:13:07,993: INFO: dir_util: creating C:\Users\Subhr\Documents\github\mlops\mlruns\0\889b1a6499344c1f88d55f83f26894c3\artifacts\model\data\model\assets]
+[2024-04-27 08:13:08,005: INFO: dir_util: creating C:\Users\Subhr\Documents\github\mlops\mlruns\0\889b1a6499344c1f88d55f83f26894c3\artifacts\model\data\model\variables]
+[2024-04-27 08:13:08,182: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-04-27 08:16:14,316: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-04-27 08:16:14,329: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-27 08:16:14,335: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-27 08:16:14,335: INFO: common: created directory at: artifacts]
+[2024-04-27 08:16:14,335: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-04-27 08:16:14,335: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-04-27 08:16:18,859: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1NF_j8W2osQ3Ra0MwiQsAg-EVrN0KgydW/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-04-27 08:16:19,158: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-04-27 08:16:19,158: INFO: main: *******************]
+[2024-04-27 08:16:19,158: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-04-27 08:16:19,165: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-27 08:16:19,169: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-27 08:16:19,169: INFO: common: created directory at: artifacts]
+[2024-04-27 08:16:19,171: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-04-27 08:16:19,915: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-04-27 08:16:20,265: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-04-27 08:16:20,265: INFO: main: *******************]
+[2024-04-27 08:16:20,265: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-04-27 08:16:20,265: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-27 08:16:20,281: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-27 08:16:20,281: INFO: common: created directory at: artifacts]
+[2024-04-27 08:16:20,281: INFO: common: created directory at: artifacts\training]
+[2024-04-27 08:16:42,499: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-04-27 08:16:42,500: INFO: main: *******************]
+[2024-04-27 08:16:42,500: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-04-27 08:16:42,502: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-27 08:16:42,503: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-27 08:16:42,503: INFO: common: created directory at: artifacts]
+[2024-04-27 08:16:45,073: INFO: common: json file saved at: scores.json]
+[2024-04-27 08:16:45,074: INFO: common: json file saved at: scores.json]
+[2024-04-27 08:16:49,510: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-04-27 08:16:50,672: INFO: builder_impl: Assets written to: C:\Users\Subhr\AppData\Local\Temp\tmp_rin1sib\model\data\model\assets]
+[2024-04-27 08:18:08,875: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
