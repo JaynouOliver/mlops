@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: mlops
+Version: 0.0.0
+Summary: A small python package for CNN app
+Home-page: https://github.com/JaynouOliver/Kidney-Disease-Classification-Deep-Learning-Project
+Author: JaynouOliver
+Author-email: jyb2084.usa@gmail.com
+Project-URL: Bug Tracker, https://github.com/JaynouOliver/Kidney-Disease-Classification-Deep-Learning-Project/issues
+
+# MLOps: Computer Vision Projects with MLflow, DVC, and Deployment 🚀
+
+This repository contains computer vision projects that leverage MLflow for experiment tracking, DVC for data and model versioning, and deployment solutions for serving the trained models. The projects follow an end-to-end MLOps workflow, demonstrating best practices for building and deploying machine learning models.
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+ - [Data Preparation](#data-preparation)
+ - [Experiment Tracking with MLflow](#experiment-tracking-with-mlflow)
+ - [Data and Model Versioning with DVC](#data-and-model-versioning-with-dvc)
+ - [Model Deployment](#model-deployment)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Project Overview
+
+This project aims to showcase an end-to-end MLOps workflow for computer vision tasks, including:
+
+1. **Data Preparation**: Preprocess and prepare the data for model training.
+2. **Experiment Tracking with MLflow**: Track and manage machine learning experiments using MLflow.
+3. **Data and Model Versioning with DVC**: Version control the data and trained models using DVC.
+4. **Model Deployment**: Deploy the trained models for serving predictions.
+
+## Prerequisites
+
+Before getting started, ensure you have the following software installed:
+
+- Python (version 3.6 or higher)
+- Git
+- MLflow
+- DVC
+- Docker (for deployment)
+
+## Installation
+
+1. Clone the repository:
+
+bash
+```git clone https://github.com/JaynouOliver/mlops.git```
+```cd mlops```
+
+2. Create a virtual environment and install the required packages:
+
+```python -m venv env```
+```source env/bin/activate```
+```pip install -r requirements.txt```
+
+
+
+## Usage
+ ### Data Preparation
+Prepare your data by organizing it in the appropriate format for your computer vision task.
+Update the data paths in the config.py file.
+
+Experiment Tracking with MLflow
+Start the MLflow server:
+
+```mlflow ui```
+
+Run the experiment tracking script:
+
+```python train.py```
+
+This will log the experiment details, including metrics and artifacts, to the MLflow server.
+
+Data and Model Versioning with DVC
+Initialize DVC in your project:
+
+```dvc init```
+Add your data and model files to DVC:
+bash
+
+```dvc add path/to/data```
+```dvc add path/to/model```
+
+```git add . git commit -m "Initial commit" git push```
+
+## Model Deployment
+ ### Build the Docker image:
+ 
+```docker build -t mlops-cv .```
+
+
+Run the Docker container:
+
+```docker run -p 8000:8000 mlops-cv```
+
+Your model will now be served at http://localhost:8000.
+
+Contributions are welcome! Please follow the guidelines in the CONTRIBUTING.md file.
+
+License
+This project is licensed under the MIT License.
